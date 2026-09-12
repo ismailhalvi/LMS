@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="scroll-smooth" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS | Main Page</title>
+
+    <link rel="stylesheet" href="/dist/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/assets/css/all.min.css">
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="/src/input.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- start navbar  -->
+
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 drop-shadow-md "
+        style="position: sticky; top:0 ; width: 100%; z-index: 222222;">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-blue-600">مدرسة ايقاع</span>
+            </a>
+            <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                <button type="button" data-dropdown-toggle="language-dropdown-menu"
+                    class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
+                        <path fill="#b22234" d="M0 0h7410v3900H0z" />
+                        <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff"
+                            stroke-width="300" />
+                        <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+                        <g fill="#fff">
+                            <g id="d">
+                                <g id="c">
+                                    <g id="e">
+                                        <g id="b">
+                                            <path id="a"
+                                                d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z" />
+                                            <use xlink:href="#a" y="420" />
+                                            <use xlink:href="#a" y="840" />
+                                            <use xlink:href="#a" y="1260" />
+                                        </g>
+                                        <use xlink:href="#a" y="1680" />
+                                    </g>
+                                    <use xlink:href="#b" x="247" y="210" />
+                                </g>
+                                <use xlink:href="#c" x="494" />
+                            </g>
+                            <use xlink:href="#d" x="988" />
+                            <use xlink:href="#c" x="1976" />
+                            <use xlink:href="#e" x="2470" />
+                        </g>
+                    </svg>
+                    English (US)
+                </button>
+                <!-- Dropdown -->
+                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700"
+                    id="language-dropdown-menu">
+                    <ul class="py-2 font-medium" role="none">
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem">
+                                <div class="inline-flex items-center">
+                                    <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2"
+                                        xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
+                                        <g fill-rule="evenodd">
+                                            <g stroke-width="1pt">
+                                                <path fill="#bd3d44"
+                                                    d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                    transform="scale(3.9385)" />
+                                                <path fill="#fff"
+                                                    d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                    transform="scale(3.9385)" />
+                                            </g>
+                                            <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
+                                            <path fill="#fff"
+                                                d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                                                transform="scale(3.9385)" />
+                                        </g>
+                                    </svg>
+                                    English (US)
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem">
+                                <div class="inline-flex items-center">
+                                    <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
+                                        <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                                        <path d="M0 0h512v170.7H0z" />
+                                        <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                                    </svg>
+                                    Deutsch
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem">
+                                <div class="inline-flex items-center">
+                                    <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512">
+                                        <g fill-rule="evenodd" stroke-width="1pt">
+                                            <path fill="#fff" d="M0 0h512v512H0z" />
+                                            <path fill="#009246" d="M0 0h170.7v512H0z" />
+                                            <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
+                                        </g>
+                                    </svg>
+                                    Italiano
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                role="menuitem">
+                                <div class="inline-flex items-center">
+                                    <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        id="flag-icon-css-cn" viewBox="0 0 512 512">
+                                        <defs>
+                                            <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z" />
+                                        </defs>
+                                        <path fill="#de2910" d="M0 0h512v512H0z" />
+                                        <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)"
+                                            xlink:href="#a" />
+                                        <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)"
+                                            xlink:href="#a" />
+                                        <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)"
+                                            xlink:href="#a" />
+                                        <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)"
+                                            xlink:href="#a" />
+                                        <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)"
+                                            xlink:href="#a" />
+                                    </svg>
+                                    中文 (繁體)
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button data-collapse-toggle="navbar-language" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-language" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+                <ul
+                    class="flex md:items-center flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">من
+                            نحن</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">خدماتنا</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">المدونة</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">اتصل
+                            بنا</a>
+                    </li>
+                    <li class="mr-2">
+                        <button id="theme-toggle" type="button"
+                            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2.5">
+                            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end navbar  -->
+
+    <!-- start blog header  -->
+
+    <section class="py-[30px] bg-blue-100 dark:bg-slate-700">
+        <div class="page-header flex max-w-screen-xl mx-auto justify-between">
+            <div class="grow flex flex-col justify-center">
+                <h1 class="text-4xl font-bold text-black dark:text-white mb-5">كورس العزف عالغيتار</h1>
+                <p class="text-black dark:text-white mb-5 font-bold">المدرب: <span
+                        class="text-amber-600 font-bold">جوندويل</span></p>
+
+                <div class="flex gap-3 mt-4">
+
+                    <span class="text-black dark:text-white">
+                        <i class="fa-regular fa-square-check"></i>
+                        اغسطس / 2025
+                    </span>
+
+                    <span class="text-black dark:text-white"><i class="fa-solid fa-file-lines"></i>
+                        20 / درس
+                    </span>
+
+                    <span class="text-black dark:text-white"><i class="fa-solid fa-globe"></i>
+                        باللغة العربية
+                    </span>
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="page-img w-[25%]">
+
+            </div>
+
+        </div>
+    </section>
+    <!-- endd blog header  -->
+
+    <!-- start blog content  -->
+    <section class="blog-content">
+        <div class="flex justify-between items-start gap-5 max-w-screen-xl mx-auto flex-wrap">
+            <!-- المحتوى الرئيسي -->
+            <div class="content w-[70%] my-5">
+                <nav class="flex mb-5" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                        <li class="inline-flex items-center">
+                            <a href="#"
+                                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                                <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                                </svg>
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <a href="#"
+                                    class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">
+                                    عنوان المقال
+                                </a>
+                            </div>
+                        </li>
+                        <li aria-current="page">
+                            <div class="flex items-center">
+                                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">
+                                    االعزف عالغيتار
+                                </span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+
+                <img class="rounded-2xl" src="dist/assets/images/music c6.jpg" alt="">
+
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-3 mt-4">
+                        <span class="text-black dark:text-black"><i class="fa-regular fa-square-check"></i> اغسطس /
+                            2025</span>
+                        <span class="text-black dark:text-black"><i class="fa-solid fa-file-lines"></i> 20 / درس</span>
+                        <span class="text-black dark:text-black"><i class="fa-solid fa-globe"></i> باللغة العربية</span>
+                    </div>
+
+                    <div class="social-media flex gap-3 mt-5">
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-amber-600 text-white hover:scale-105 hover:bg-amber-500 transition-all duration-300">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-sky-500 text-white hover:scale-105 hover:bg-sky-400 transition-all duration-300">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-pink-500 text-white hover:scale-105 hover:bg-pink-400 transition-all duration-300">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-white hover:scale-105 hover:bg-blue-600 transition-all duration-300">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-red-500 text-white hover:scale-105 hover:bg-red-400 transition-all duration-300">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-red-500 text-white hover:scale-105 hover:bg-pink-400 transition-all duration-300">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-4" id="description" role="tabpanel" aria-labelledby="description-tab">
+                    <div class="grid grid-cols-2 gap-4 mt-5">
+                        <div>
+                            <ul class="text-black dark:text-black flex flex-col gap-3">
+                                <li><i class="text-amber-600 fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف
+                                        الغيتار</span></li>
+                                <li><i class="text-amber-600 fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف
+                                        الغيتار</span></li>
+                                <li><i class="text-amber-600 fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف
+                                        الغيتار</span></li>
+                                <li><i class="text-amber-600 fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف
+                                        الغيتار</span></li>
+                                <li><i class="text-amber-600 fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف
+                                        الغيتار</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="text-black dark:text-black flex flex-col gap-3">
+                                <li><i class="fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف الغيتار</span>
+                                </li>
+                                <li><i class="fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف الغيتار</span>
+                                </li>
+                                <li><i class="fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف الغيتار</span>
+                                </li>
+                                <li><i class="fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف الغيتار</span>
+                                </li>
+                                <li><i class="fa-regular fa-square-check"></i> <span>شرح للمبتدئين بعزف الغيتار</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-span-2">
+                            <p>
+                                منصة إيقاع هي مشروع تعليمي موسيقي حديث يهدف إلى جعل تعلم الموسيقى متاحًا وسهل الوصول
+                                للجميع، سواء للمبتدئين أو المحترفين. المنصة مصممة لتقديم محتوى تفاعلي متنوع يجمع بين
+                                الدروس النظرية والعملية، مع التركيز على الآلات الموسيقية الإيقاعية كأساس لبناء الحس
+                                الموسيقي وتنمية الموهبة. من خلال فيديوهات تعليمية، مقالات، وتمارين تطبيقية، تتيح
+                                "إيقاع" للطلاب فرصة التعلم بخطوات واضحة ومنهجية، مع إمكانية المتابعة مع أساتذة
+                                متخصصين لتقييم التقدم وتقديم الملاحظات. كما تسعى المنصة لخلق مجتمع موسيقي متكامل
+                                يجمع المتعلمين من مختلف المستويات لتبادل الخبرات والمشاركة في أنشطة وتحديات موسيقية
+                                ممتعة. الهدف الأساسي من "إيقاع" هو جعل الموسيقى وسيلة للتعبير والإبداع، وأداة لتطوير
+                                القدرات الفردية وتعزيز التواصل الثقافي والفني.
+                            </p>
+                        </div>
+
+                        <img width="100%" src="dist/assets/images/pro2.jpg" alt="">
+
+                        <div class="col-span-2">
+                            <p>
+                                منصة إيقاع هي مشروع تعليمي موسيقي حديث يهدف إلى جعل تعلم الموسيقى متاحًا وسهل الوصول
+                                للجميع، سواء للمبتدئين أو المحترفين. المنصة مصممة لتقديم محتوى تفاعلي متنوع يجمع بين
+                                الدروس النظرية والعملية، مع التركيز على الآلات الموسيقية الإيقاعية كأساس لبناء الحس
+                                الموسيقي وتنمية الموهبة. من خلال فيديوهات تعليمية، مقالات، وتمارين تطبيقية، تتيح
+                                "إيقاع" للطلاب فرصة التعلم بخطوات واضحة ومنهجية، مع إمكانية المتابعة مع أساتذة
+                                متخصصين لتقييم التقدم وتقديم الملاحظات. كما تسعى المنصة لخلق مجتمع موسيقي متكامل
+                                يجمع المتعلمين من مختلف المستويات لتبادل الخبرات والمشاركة في أنشطة وتحديات موسيقية
+                                ممتعة. الهدف الأساسي من "إيقاع" هو جعل الموسيقى وسيلة للتعبير والإبداع، وأداة لتطوير
+                                القدرات الفردية وتعزيز التواصل الثقافي والفني.
+                            </p>
+                        </div>
+
+                        <img width="100%" src="dist/assets/images/pro3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- الـ widget -->
+            <div class="widget w-[25%] shrink-0 my-5 p-5 rounded-2xl bg-gray-200 sticky top-[75px]">
+                <div class="all-categories">
+                    <h3 class="text-2xl font-bold mb-4 text-black dark:text-black">التصنيفات </h3>
+                    <hr>
+                    <div class="categories">
+
+                        <a href="">
+                            <h3 class="text-2xl font-bold mb-4 text-black dark:text-black">عزف غيتار</h3>
+
+                        </a>
+                        <a href="">
+                            <h3 class="text-2xl font-bold mb-4 text-black dark:text-black">عزف غيتار</h3>
+
+                        </a>
+                        <a href="">
+                            <h3 class="text-2xl font-bold mb-4 text-black dark:text-black">عزف غيتار</h3>
+
+                        </a>
+                        <a href="">
+                            <h3 class="text-2xl font-bold mb-4 text-black dark:text-black">عزف غيتار</h3>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="all-categories ">
+                    <h3 class="text-2xl font-bold mb-4 text-black dark:text-black">احدث الاخبار </h3>
+                    <hr>
+                    <div class="categories ">
+                        <div class=" flex justify-between items-center p-3">
+
+                            <div>
+                                <h2>عزف غيتار</h2>
+                                <i class="fa-regular fa-square-check"></i>
+                                اغسطس / 2025
+                            </div>
+                            <img class="w-[85px] h-[85px] object-cover rounded-[6px]"
+                                src="dist/assets/images/music c6.jpg" alt="">
+                        </div>
+                        <hr class="text-gray-100">
+
+                    </div>
+                    <div class="categories mt-1">
+                        <div class=" flex justify-between items-center p-3">
+
+                            <div>
+                                <h2>عزف غيتار</h2>
+                                <i class="fa-regular fa-square-check"></i>
+                                اغسطس / 2025
+                            </div>
+                            <img class="w-[85px] h-[85px] object-cover rounded-[6px]"
+                                src="dist/assets/images/music c6.jpg" alt="">
+                        </div>
+                        <hr class="text-gray-100">
+
+                    </div>
+                    <div class="categories">
+                        <div class=" flex justify-between items-center p-3">
+
+                            <div>
+                                <h2>عزف غيتار</h2>
+                                <i class="fa-regular fa-square-check"></i>
+                                اغسطس / 2025
+                            </div>
+                            <img class="w-[85px] h-[85px] object-cover rounded-[6px]"
+                                src="dist/assets/images/music c6.jpg" alt="">
+                        </div>
+                        <hr class="text-gray-100">
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            <div class="reviews p-2 my-2">
+                    <h2 class="text-2xl font-bold text-black dark:text-black mb-5">التقييمات</h2>
+                    <div class="flex gap-4 items-center border-b border-gray-200 dark:border-gray-700">
+                        <h3 class="mb-2 text-2xl font-bold text-black dark:text-black">250</h3>
+                        <div class="flex gap-2 mb-2">
+                            <div class="rating text-amber-300 ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="progress p-3 bg-gray-100 my-5 rounded-2xl">
+                        <div class="flex gap-4 items-center mt-2">
+                            <span class="text-black dark:text-black font-bold">5</span>
+                            <span class="text-black dark:text-black">50%</span>
+
+                            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                    style="width: 45%"> 45%</div>
+                            </div>
+
+                        </div>
+                        <div class="flex gap-4 items-center mt-2">
+                            <span class="text-black dark:text-black font-bold">5</span>
+                            <span class="text-black dark:text-black">50%</span>
+
+                            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                    style="width: 45%"> 45%</div>
+                            </div>
+
+                        </div>
+                        <div class="flex gap-4 items-center mt-2">
+                            <span class="text-black dark:text-black font-bold">5</span>
+                            <span class="text-black dark:text-black">50%</span>
+
+                            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                    style="width: 45%"> 45%</div>
+                            </div>
+
+                        </div>
+                        <div class="flex gap-4 items-center mt-2">
+                            <span class="text-black dark:text-black font-bold">5</span>
+                            <span class="text-black dark:text-black">50%</span>
+
+                            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                    style="width: 45%"> 45%</div>
+                            </div>
+
+                        </div>
+                        <div class="flex gap-4 items-center mt-2">
+                            <span class="text-black dark:text-black font-bold">5</span>
+                            <span class="text-black dark:text-black">50%</span>
+
+                            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                    style="width: 45%"> 45%</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+    </section>
+
+
+
+    <!-- end blog content  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start footer section  -->
+    <footer class="footer relative dark:bg-slate-900  border-t-amber-600 border-[5px] dark:border-t-amber-600"
+        style="background-image: url(dist/assets/images/footerbg.png) ; background-size: cover;">
+
+        <div class=" absolute w-full h-full bg-[#0000004f]">
+
+        </div>
+
+        <div
+            class=" z-10 relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-3 pt-4">
+            <div class="first-section">
+                <h3 class="text-2xl font-bold mb-4 text-black dark:text-white">منصة ايقاع </h3>
+                <p class="text-1xl text-black dark:text-white w-[80%] mt-3">
+                    نبذة عن منصة ايقاع نحن منصة ويوجد لدينا الكثير من الكورسات والدورات التعليمية التي تساعدك في تطوير
+                    مهاراتك
+                    الموسيقية والتي يمكنك تحميلها بكل سهولة من خلال منصتنا
+
+                </p>
+            </div>
+
+            <div class="2-section">
+                <h3 class="text-2xl font-bold mb-4 text-black dark:text-white">روابط سريعة</h3>
+                <ul class="text-1xl text-black dark:text-white flex flex-col gap-2">
+                    <li class="mb-2">
+                        <a href="/index.html" class="hover:opacity-75">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/about.html" class="hover:opacity-75">من نحن</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/blog.html" class="hover:opacity-75">المدونة</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/contact.html" class="hover:opacity-75">اتصل بنا</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="3-section">
+                <h3 class="text-2xl font-bold mb-4 text-black dark:text-white">اهم الكورسات</h3>
+                <ul class="text-1xl text-black dark:text-white flex flex-col gap-2">
+                    <li class="mb-2">
+                        <a href="/index.html" class="hover:opacity-75"> كورس غيتار</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/about.html" class="hover:opacity-75"> كورس بيانو</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/blog.html" class="hover:opacity-75">كورس غناء</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/contact.html" class="hover:opacity-75">كورس رسم</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="4-section">
+                <h3 class="text-2xl font-bold mb-4 text-black dark:text-white">النشرة البريدية</h3>
+                <form action="">
+
+                    <input type="email" name="" id="" placeholder="ادخل بريدك الالكتروني"
+                        class="w-full p-3 rounded-xl text-center placeholder:text-center">
+                    <button type="submit"
+                        class="bg-amber-600 hover:opacity-75 text-white font-bold py-2 px-4 rounded-xl w-[100%] text-center block mt-3 cursor-pointer">
+                        اشترك
+                    </button>
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="z-30 relative bottom-footer text-center text-black dark:text-white border-t ">
+            <p class="mt-5 ">جميع الحقوق محفوظة &copy; 2025</p>
+            <p class="">تصميم وتطوير <a href="#" class="text-amber-600">ايقاع</a></p>
+        </div>
+    </footer>
+
+    <!-- end footer section  -->
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="/dist/assets/js/script.js">
+    </script>
+
+
+</body>
+
+</html>
